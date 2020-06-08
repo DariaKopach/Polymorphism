@@ -16,7 +16,7 @@ public class Main {
 
         Parallelogram parallelogram = new Parallelogram(
                 8,
-                8,
+                6,
                 Math.PI / 0.4);
 
         System.out.println(parallelogram + "\n");
