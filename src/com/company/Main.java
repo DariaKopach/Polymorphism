@@ -24,7 +24,5 @@ public class Main {
         System.out.println(parallelogram.toJSON() + "\n");
         System.out.println(parallelogram.toConsole() + "\n");
 
-
-
     }
 }
