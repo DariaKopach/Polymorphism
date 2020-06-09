@@ -16,7 +16,7 @@ public class Parallelogram implements IGeometry, IPackaging {
 
     private int smallSide;
     private int bigSide;
-    private double Angle;
+    private double angle;
 
     // 1. Constructor:
     // a) generate an empty constructor
@@ -29,7 +29,7 @@ public class Parallelogram implements IGeometry, IPackaging {
     public Parallelogram(int smallSide, int bigSide, double angle) {
         this.smallSide = smallSide;
         this.bigSide = bigSide;
-        Angle = angle;
+        angle = angle;
     }
 
     // 2. Generate getters and setters
@@ -51,11 +51,11 @@ public class Parallelogram implements IGeometry, IPackaging {
     }
 
     public double getAngle() {
-        return Angle;
+        return angle;
     }
 
     public void setAngle(double angle) {
-        Angle = angle;
+        angle = angle;
     }
 
     // Override toString() method
@@ -125,12 +125,12 @@ public class Parallelogram implements IGeometry, IPackaging {
         Parallelogram that = (Parallelogram) o;
         return smallSide == that.smallSide &&
                 bigSide == that.bigSide &&
-                Double.compare(that.Angle, Angle) == 0;
+                Double.compare(that.angle, angle) == 0;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(smallSide, bigSide, Angle);
+        return Objects.hash(smallSide, bigSide, angle);
     }
 
     @Override
